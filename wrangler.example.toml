@@ -1,0 +1,22 @@
+# Template. `npm run provision` copies this to wrangler.toml (git-ignored) and fills in the KV ids.
+# Put your Turnstile site key and AI Gateway id in wrangler.toml, never in this file.
+name = "evenstevenapp"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "public"
+
+[ai]
+binding = "AI"
+
+[vars]
+VISION_MODEL = "@cf/mistralai/mistral-small-3.1-24b-instruct"
+TURNSTILE_SITE_KEY = ""
+AI_GATEWAY_ID = ""
+AI_DISABLED = "0"
+
+[[kv_namespaces]]
+binding = "TRIPS"
+id = "REPLACE_WITH_KV_ID"
+
+[[kv_namespaces]]
+binding = "RECEIPTS"
+id = "REPLACE_WITH_RECEIPTS_KV_ID"

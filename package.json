@@ -1,0 +1,16 @@
+{
+  "name": "evensteven",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test 'test/**/*.test.js'",
+    "dev": "wrangler pages dev",
+    "deploy": "wrangler pages deploy --branch main",
+    "provision": "sh scripts/provision.sh",
+    "destroy": "sh scripts/provision.sh destroy"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0"
+}
